@@ -1,0 +1,12 @@
+dependencies:
+- name: filebeat
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.0.2
+- name: elasticsearch
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.13.1
+- name: kibana
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 0.16.4
+digest: sha256:cd1e6ffa8b24c85daaa0fe8c032fbe52e4fabb95f966d5ec1621caca06581115
+generated: 2018-11-04T22:36:38.510677829+01:00

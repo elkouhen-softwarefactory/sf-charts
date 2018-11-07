@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data-1
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /zpool-126262/WWWLOGSTASH/data-1
+    server: 10.16.103.9
+  persistentVolumeReclaimPolicy: Delete
