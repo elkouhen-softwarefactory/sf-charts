@@ -1,0 +1,18 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: kibana-secret
+spec:
+  secretName: kibana-secret
+  issuerRef:
+    name: letsencrypt-issuer
+    kind: Issuer
+  commonName: kibana.k8.wildwidewest.xyz
+  dnsNames:
+  - kibana.k8.wildwidewest.xyz
+  acme:
+    config:
+    - http01:
+        ingressClass: nginx
+      domains:
+        - kibana.k8.wildwidewest.xyz
