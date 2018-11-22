@@ -39,6 +39,18 @@ data:
     drain:
       enabled: False
 
+filebeat:
+  config:
+    output:
+      file:
+        enabled: false
+      elasticsearch:
+        hosts: [ 'elk-elasticsearch-client:9200' ]
+        pipeline: opus_log
+    setup:
+      kibana:
+        host: elk-kibana:80
+
 kibana:
   service:
     externalPort: 80
