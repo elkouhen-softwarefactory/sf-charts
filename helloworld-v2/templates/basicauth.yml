@@ -4,4 +4,4 @@ type: Opaque
 metadata:
   name: basicauthsecret
 data:
-  auth: dXNlcjE6JGFwcjEkUy8vNXVMalgkL0l4bHJTeEZtOFNRcDU5MExOU0pvMA==
+  auth: {{ .Values.auth.htpassword }}
