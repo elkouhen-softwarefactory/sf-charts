@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Secret
-type: Opaque
-metadata:
-  name: myingressauthsecret
-data:
-  auth: dXNlcjE6LzRldUkxTS9MWXVvdXhmdVB5TkcuN2cuZzE=
