@@ -27,6 +27,9 @@ spec:
             - name: http
               containerPort: 8080
               protocol: TCP
+          env:
+          - name: SPRING_DATASOURCE_URL
+            value: jdbc:h2:tcp://{{ .Release.Name }}-h2:1521/~/books
 #          livenessProbe:
 #            httpGet:
 #              path: /

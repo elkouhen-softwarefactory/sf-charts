@@ -1,4 +1,5 @@
 dependencies:
-  - name: H2
-    version: "0.0.1"
-    repository: https://kubernetes-charts.storage.googleapis.com
+- name: h2
+  version: 0.1.0
+  repository: "file://../h2"
+
