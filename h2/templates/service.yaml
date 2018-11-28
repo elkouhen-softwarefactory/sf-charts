@@ -11,9 +11,9 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: jdbc
       protocol: TCP
-      name: http
+      name: jdbc
   selector:
     app: {{ template "h2.name" . }}
     release: {{ .Release.Name }}
