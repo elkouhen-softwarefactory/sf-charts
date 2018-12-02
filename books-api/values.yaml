@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: elkouhen/books-api
+  repository: registry.k8.wildwidewest.xyz/repository/docker-repository/opus/books-api
   tag: latest
   pullPolicy: IfNotPresent
 
