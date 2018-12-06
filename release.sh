@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-version=0.1.58
+version=0.0.1
 
 helm package --version $version ELK
 helm package --version $version h2
-helm package --version $version helloworld
+helm package --version $version books-api
 
-helm repo index . --url https://softeamouest.github.io/charts/
+helm repo index . --url https://softeamouest-opus.github.io/charts/
 
 git add .
 
