@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version=0.0.1
+version=0.0.2
 
 helm package --version $version ELK
 helm package --version $version h2
