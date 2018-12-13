@@ -13,6 +13,9 @@ service:
   type: ClusterIP
   port: 80
 
+h2:
+  enabled: true
+
 ingress:
   enabled: true
   annotations:
@@ -20,8 +23,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
     nginx.ingress.kubernetes.io/auth-type: basic
-    # name of the secret that contains the user/password definitions
-    nginx.ingress.kubernetes.io/auth-secret: basicauthsecret
     # message to display with an appropriate context why the authentication is required
     nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required'
   path: /
