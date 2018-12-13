@@ -24,14 +24,14 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
-              containerPort: 8080
-              protocol: TCP
-{{- if .Values.h2.enabled -}}
+          - name: http
+            containerPort: 8080
+            protocol: TCP
+{{- if .Values.h2.enabled}}
           env:
-            - name: SPRING_DATASOURCE_URL
-              value: jdbc:h2:tcp://{{ .Release.Name }}-h2:1521/~/books
-{{- end }}
+          - name: SPRING_DATASOURCE_URL
+            value: jdbc:h2:tcp://{{ .Release.Name }}-h2:1521/~/books
+{{- end}}
 #          livenessProbe:
 #            httpGet:
 #              path: /
