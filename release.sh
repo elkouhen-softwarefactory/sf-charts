@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-version=0.0.10
+while getopts "v:" arg; do
+  case $arg in
+    v)
+      version=$OPTARG
+      ;;
+  esac
+done
 
 helm package --version $version elk
 helm package --version $version h2
