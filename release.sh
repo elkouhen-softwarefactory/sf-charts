@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-version=0.0.7
+version=0.0.8
 
-helm package --version $version ELK
+helm package --version $version elk
 helm package --version $version h2
 helm package --version $version books-api
 
