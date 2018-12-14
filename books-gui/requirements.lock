@@ -1,0 +1,6 @@
+dependencies:
+- name: books-api
+  repository: file://../books-api
+  version: 0.0.11
+digest: sha256:88e8be75d52c035e0265bdb4568eaccdbfbe87c2332d5c6e44cab6845bb9f811
+generated: 2018-12-14T13:08:15.139953244+01:00
