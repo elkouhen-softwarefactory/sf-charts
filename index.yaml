@@ -3,7 +3,7 @@ entries:
   books-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.19860714+01:00
+    created: 2018-12-16T21:59:47.898735042+01:00
     description: A Helm chart for Kubernetes
     digest: 9bf2a66339fb6a23c127fb40e786e1e140e69833f9f27ee9f32c89adc808814c
     name: books-api
@@ -12,7 +12,7 @@ entries:
     version: 0.0.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.197980939+01:00
+    created: 2018-12-16T21:59:47.897363555+01:00
     description: A Helm chart for Kubernetes
     digest: ba63614a20cba4f528617b937511bf2378d8adc2b1af99bdf9fc059b603a8499
     name: books-api
@@ -21,7 +21,7 @@ entries:
     version: 0.0.10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.199201241+01:00
+    created: 2018-12-16T21:59:47.900196361+01:00
     description: A Helm chart for Kubernetes
     digest: 1270ce2af84d9fc71dfab7bf1dd08c26c540b1cf969c79d623ee183465c83f20
     name: books-api
@@ -31,7 +31,16 @@ entries:
   books-gui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.200329193+01:00
+    created: 2018-12-16T21:59:47.911755406+01:00
+    description: A Helm chart for Kubernetes
+    digest: 8b85ddf6ed68d90ac264099fa85973fb7739a59b7044d7dcd06ea8471dfbcaa7
+    name: books-gui
+    urls:
+    - https://softeamouest-opus.github.io/charts/books-gui-0.0.14.tgz
+    version: 0.0.14
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-12-16T21:59:47.911172513+01:00
     description: A Helm chart for Kubernetes
     digest: cfbacdc8f1d9adeb564c32fabe333c683e0e856f51fe8229226aa9b9e2a62ae9
     name: books-gui
@@ -40,7 +49,7 @@ entries:
     version: 0.0.13
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.199952933+01:00
+    created: 2018-12-16T21:59:47.910581098+01:00
     description: A Helm chart for Kubernetes
     digest: a3e40837803ab9447acfcf56a71e1c73589cbf5b7fcda8bef39cf9369550eaa5
     name: books-gui
@@ -49,7 +58,7 @@ entries:
     version: 0.0.12
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.199572677+01:00
+    created: 2018-12-16T21:59:47.901295433+01:00
     description: A Helm chart for Kubernetes
     digest: 352a995c1d21a97ca8686eaada96d3dea59407a5145a21f8011c028ae69abcb5
     name: books-gui
@@ -59,7 +68,7 @@ entries:
   elk:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.206634214+01:00
+    created: 2018-12-16T21:59:47.918714231+01:00
     description: A Helm chart for Kubernetes
     digest: 13a0b6dc666272caf9a8256601330d199405251314cf66913e5f4cc87319f7b8
     name: elk
@@ -68,7 +77,7 @@ entries:
     version: 0.0.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.203467758+01:00
+    created: 2018-12-16T21:59:47.91552485+01:00
     description: A Helm chart for Kubernetes
     digest: db356d5a127ad1088aa578feb276bd2e22b62c759fad4dab7fa75de727e657ee
     name: elk
@@ -77,7 +86,7 @@ entries:
     version: 0.0.10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.209807987+01:00
+    created: 2018-12-16T21:59:47.921824409+01:00
     description: A Helm chart for Kubernetes
     digest: 6ee8ad4a4a77a8aecad3397bf137e85e3b250e7d0a4e3ffbcab475abd1b47291
     name: elk
@@ -87,7 +96,7 @@ entries:
   h2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.212139533+01:00
+    created: 2018-12-16T21:59:47.922628907+01:00
     description: A Helm chart for Kubernetes
     digest: 05b88892a927a05506d8c2cfa47237d58529010df4c15f921c3922f76928fddd
     name: h2
@@ -96,7 +105,7 @@ entries:
     version: 0.0.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.211725348+01:00
+    created: 2018-12-16T21:59:47.922240215+01:00
     description: A Helm chart for Kubernetes
     digest: 106b780ed14fc5d3e295802b24ce0917d02a8b5a8cb88683ee88f6d41bacce09
     name: h2
@@ -105,11 +114,11 @@ entries:
     version: 0.0.10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-16T21:33:39.212541857+01:00
+    created: 2018-12-16T21:59:47.923001483+01:00
     description: A Helm chart for Kubernetes
     digest: a30e99e37a4d22694784e6a840654597efa6dcdc807bba0729e7b6ab650114c6
     name: h2
     urls:
     - https://softeamouest-opus.github.io/charts/h2-0.0.9.tgz
     version: 0.0.9
-generated: 2018-12-16T21:33:39.197144905+01:00
+generated: 2018-12-16T21:59:47.895651266+01:00
