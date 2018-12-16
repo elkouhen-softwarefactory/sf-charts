@@ -29,7 +29,7 @@ spec:
               protocol: TCP
           env:
           - name: books_api_url
-            value: {{ .Release.Name | | replace "gui" "api" }}
+            value: {{ .Release.Name | replace "gui" "api" }}
 #          livenessProbe:
 #            httpGet:
 #              path: /
