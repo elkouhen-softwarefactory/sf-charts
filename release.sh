@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-while getopts "v:p:" arg; do
+while getopts "v:c:" arg; do
   case $arg in
     v)
       version=$OPTARG
       ;;
-    p)
+    c)
       package=$OPTARG
       ;;
   esac
