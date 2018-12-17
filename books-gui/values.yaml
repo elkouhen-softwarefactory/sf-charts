@@ -19,9 +19,6 @@ ingress:
     certmanager.k8s.io/issuer: letsencrypt-issuer
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
-    nginx.ingress.kubernetes.io/auth-type: basic
-    # message to display with an appropriate context why the authentication is required
-    nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required'
   path: /
   hosts:
   - books-gui.k8.wildwidewest.xyz
