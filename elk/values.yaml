@@ -74,4 +74,5 @@ kibana:
 
 elastalert:
   elasticsearch:
-    host: http://elk-elasticsearch-client:9200
+    host: elk-elasticsearch-client
+    port: 9200
