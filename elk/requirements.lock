@@ -2,6 +2,9 @@ dependencies:
 - name: filebeat
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 1.1.1
+- name: kube-state-metrics
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 0.12.1
 - name: metricbeat
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 0.4.2
@@ -14,5 +17,5 @@ dependencies:
 - name: elastalert
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 0.9.0
-digest: sha256:cb401c17c512cc9bdc168f67a1696d0be8963e83d32a2e8a9267d32f6711e72e
-generated: 2018-12-20T16:55:11.875209022+01:00
+digest: sha256:87905275594490c65cf57f4e709837163e0dc73c8a5b73a28f23b8e5581461ab
+generated: 2018-12-20T17:40:34.393649201+01:00
