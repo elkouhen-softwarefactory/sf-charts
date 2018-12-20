@@ -71,3 +71,7 @@ kibana:
     secretName: kibana
   env:
     ELASTICSEARCH_URL: http://elk-elasticsearch-client:9200
+
+elastalert:
+  elasticsearch:
+    host: http://elk-elasticsearch-client:9200
