@@ -54,6 +54,15 @@ filebeat:
       kibana:
         host: elk-kibana:80
 
+metricbeat:
+  deployment:
+    modules:
+      kubernetes:
+        enabled: true
+        config:
+        - module: kubernetes
+          hosts: ["kube-state-metrics:8080"]
+
 kibana:
   service:
     externalPort: 80
