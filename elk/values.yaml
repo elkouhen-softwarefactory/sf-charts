@@ -55,17 +55,15 @@ metricbeat:
         config:
         - module: kubernetes
           hosts: ["elk-kube-state-metrics:8080"]
-  daemonset:
-    config:
-      output.file:
-        enabled: false
-      output:
-        elasticsearch:
-          hosts: [ 'elk-elasticsearch-client:9200' ]
-          index: "metricbeat-%{[beat.version]}-%{+yyyy.MM.dd}"
-      setup:
-        kibana:
-          host: elk-kibana:80
+  config:
+    output.file:
+      enabled: false
+    output:
+      elasticsearch:
+        hosts: [ 'elk-elasticsearch-client:9200' ]
+    setup:
+      kibana:
+        host: elk-kibana:80
 
 elastalert:
   elasticsearch:
@@ -78,14 +76,14 @@ kibana:
   ingress:
     enabled: False
     hosts:
-      - kibana.k8.wildwidewest.xyz
+    - kibana.k8.wildwidewest.xyz
     annotations:
       certmanager.k8s.io/cluster-issuer: letsencrypt-issuer
       kubernetes.io/ingress.class: nginx
     tls:
-      - hosts:
-          - kibana.k8.wildwidewest.xyz
-        secretName: kibana-secret
+    - hosts:
+      - kibana.k8.wildwidewest.xyz
+      secretName: kibana-secret
     secretName: kibana
   env:
     ELASTICSEARCH_URL: http://elk-elasticsearch-client:9200
