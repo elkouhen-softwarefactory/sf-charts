@@ -61,7 +61,22 @@ metricbeat:
         enabled: true
         config:
         - module: kubernetes
-          hosts: ["kube-state-metrics:8080"]
+          hosts: ["elk-kube-state-metrics:8080"]
+  daemonset:
+    config:
+      output:
+        file:
+          enabled: false
+        elasticsearch:
+          hosts: [ 'elk-elasticsearch-client:9200' ]
+      setup:
+        kibana:
+          host: elk-kibana:80
+
+elastalert:
+  elasticsearch:
+    host: elk-elasticsearch-client
+    port: 9200
 
 kibana:
   service:
@@ -81,7 +96,4 @@ kibana:
   env:
     ELASTICSEARCH_URL: http://elk-elasticsearch-client:9200
 
-elastalert:
-  elasticsearch:
-    host: elk-elasticsearch-client
-    port: 9200
+
