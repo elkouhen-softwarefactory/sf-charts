@@ -72,46 +72,6 @@ metricbeat:
       setup:
         kibana:
           host: elk-kibana:80
-    modules:
-      system:
-        enabled: true
-        config:
-        - module: system
-          period: 10s
-          metricsets:
-          - cpu
-          - load
-          - memory
-          - network
-          - process
-          - process_summary
-          # - core
-          # - diskio
-          # - socket
-          processes: ['.*']
-          process.include_top_n:
-            by_cpu: 5      # include top 5 processes by CPU
-            by_memory: 5   # include top 5 processes by memory
-        - module: system
-          period: 1m
-          metricsets:
-          - filesystem
-          - fsstat
-          processors:
-          - drop_event.when.regexp:
-              system.filesystem.mount_point: '^/(sys|cgroup|proc|dev|etc|host|lib)($|/)'
-      kubernetes:
-        enabled: true
-        config:
-        - module: kubernetes
-          metricsets:
-          - node
-          - system
-          - pod
-          - container
-          - volume
-          host: ${NODE_NAME}
-          hosts: ["http://${HOSTNAME}:10250"]
 
 elastalert:
   elasticsearch:
