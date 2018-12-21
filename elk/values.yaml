@@ -49,21 +49,28 @@ filebeat:
 metricbeat:
   deployment:
     debug: true
+    config:
+      output.file:
+        enabled: false
+      output:
+        elasticsearch:
+          hosts: [ 'elk-elasticsearch-client:9200' ]
     modules:
       kubernetes:
         enabled: true
         config:
         - module: kubernetes
           hosts: ["elk-kube-state-metrics:8080"]
-  config:
-    output.file:
-      enabled: false
-    output:
-      elasticsearch:
-        hosts: [ 'elk-elasticsearch-client:9200' ]
-    setup:
-      kibana:
-        host: elk-kibana:80
+  daemonset:
+    config:
+      output.file:
+        enabled: false
+      output:
+        elasticsearch:
+          hosts: [ 'elk-elasticsearch-client:9200' ]
+      setup:
+        kibana:
+          host: elk-kibana:80
 
 elastalert:
   elasticsearch:
