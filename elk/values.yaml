@@ -57,7 +57,7 @@ metricbeat:
   daemonset:
     config:
       output.file:
-        enabled: true
+        enabled: false
       output:
         elasticsearch:
           hosts: [ 'elk-elasticsearch-client:9200' ]
