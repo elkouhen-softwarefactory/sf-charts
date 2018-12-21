@@ -62,6 +62,7 @@ metricbeat:
       output:
         elasticsearch:
           hosts: [ 'elk-elasticsearch-client:9200' ]
+          index: "metricbeat-%{[beat.version]}-%{+yyyy.MM.dd}"
       setup:
         kibana:
           host: elk-kibana:80
