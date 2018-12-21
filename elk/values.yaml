@@ -101,7 +101,7 @@ kibana:
     reset: true
     # Use <plugin_name,version,url> to add/upgrade plugin
     values:
-      - elastalert-kibana-plugin,1.0.1,https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.3.1.zip
+      - elastalert-kibana-plugin,1.0.1,https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.5.3.zip
   # -
 
 resources: {}
