@@ -29,14 +29,6 @@ ingress:
     - kibana.k8.wildwidewest.xyz
     secretName: kibana-secret
 
-resources: {}
-
-nodeSelector: {}
-
-tolerations: []
-
-affinity: {}
-
 data:
   hooks:
     drain:
@@ -65,7 +57,7 @@ metricbeat:
   daemonset:
     config:
       output.file:
-        enabled: false
+        enabled: true
       output:
         elasticsearch:
           hosts: [ 'elk-elasticsearch-client:9200' ]
@@ -96,4 +88,10 @@ kibana:
   env:
     ELASTICSEARCH_URL: http://elk-elasticsearch-client:9200
 
+resources: {}
 
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
