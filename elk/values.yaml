@@ -48,6 +48,7 @@ filebeat:
 
 metricbeat:
   deployment:
+    debug: true
     modules:
       kubernetes:
         enabled: true
