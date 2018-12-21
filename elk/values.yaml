@@ -64,9 +64,9 @@ metricbeat:
           hosts: ["elk-kube-state-metrics:8080"]
   daemonset:
     config:
+      output.file:
+        enabled: false
       output:
-        file:
-          enabled: false
         elasticsearch:
           hosts: [ 'elk-elasticsearch-client:9200' ]
       setup:
