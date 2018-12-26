@@ -14,8 +14,8 @@ dependencies:
 - name: kibana
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 1.1.0
-- name: elastalert
+- name: elasticsearch-curator
   repository: https://kubernetes-charts.storage.googleapis.com
-  version: 0.9.0
-digest: sha256:87905275594490c65cf57f4e709837163e0dc73c8a5b73a28f23b8e5581461ab
-generated: 2018-12-20T17:40:34.393649201+01:00
+  version: 1.0.1
+digest: sha256:9e7c848f7d0d59d8976d538035c9f74ad24e603f2f4c3dec664ccf3acd24dcb6
+generated: 2018-12-26T22:58:39.364427719+01:00
