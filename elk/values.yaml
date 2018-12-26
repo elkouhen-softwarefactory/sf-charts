@@ -72,10 +72,10 @@ metricbeat:
         kibana:
           host: elk-kibana:80
 
-elastalert:
-  elasticsearch:
-    host: elk-elasticsearch-client
-    port: 9200
+elasticsearch-curator:
+  config:
+    elasticsearch:
+      hosts: 'elk-elasticsearch-client'
 
 kibana:
   service:
