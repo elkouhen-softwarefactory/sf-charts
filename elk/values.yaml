@@ -75,7 +75,7 @@ metricbeat:
 elasticsearch-curator:
   config:
     elasticsearch:
-      hosts: 'elk-elasticsearch-client'
+      hosts: [ 'elk-elasticsearch-client' ]
 
 kibana:
   service:
