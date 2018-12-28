@@ -48,7 +48,6 @@ filebeat:
 
 metricbeat:
   deployment:
-    debug: true
     config:
       output.file:
         enabled: false
@@ -71,6 +70,14 @@ metricbeat:
       setup:
         kibana:
           host: elasticstack-kibana:80
+
+heartbeat:
+  config:
+    output.file:
+      enabled: false
+    output:
+      elasticsearch:
+        hosts: [ 'elasticstack-elasticsearch-client:9200' ]
 
 elasticsearch-curator:
   config:
