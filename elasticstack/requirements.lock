@@ -8,9 +8,6 @@ dependencies:
 - name: metricbeat
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 0.4.2
-- name: heartbeat
-  repository: https://kubernetes-charts.storage.googleapis.com
-  version: 0.2.0
 - name: elasticsearch
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 1.15.1
@@ -20,5 +17,5 @@ dependencies:
 - name: elasticsearch-curator
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 1.0.1
-digest: sha256:6f835d984913309608639220c0dfeecf30bc562bc8f568813dbc22bb7d6d366a
-generated: 2018-12-28T08:55:26.058973935+01:00
+digest: sha256:862710c7b5b84c12cf87d9d9c660f51832c8f662571c05a2d3f2758efdbac039
+generated: 2018-12-28T10:42:47.157240188+01:00
