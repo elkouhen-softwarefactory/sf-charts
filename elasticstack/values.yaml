@@ -40,11 +40,11 @@ filebeat:
       file:
         enabled: false
       elasticsearch:
-        hosts: [ 'elk-elasticsearch-client:9200' ]
+        hosts: [ 'elasticstack-elasticsearch-client:9200' ]
         pipeline: opus_log
     setup:
       kibana:
-        host: elk-kibana:80
+        host: elasticstack-kibana:80
 
 metricbeat:
   deployment:
@@ -54,28 +54,28 @@ metricbeat:
         enabled: false
       output:
         elasticsearch:
-          hosts: [ 'elk-elasticsearch-client:9200' ]
+          hosts: [ 'elasticstack-elasticsearch-client:9200' ]
     modules:
       kubernetes:
         enabled: true
         config:
         - module: kubernetes
-          hosts: ["elk-kube-state-metrics:8080"]
+          hosts: ["elasticstack-kube-state-metrics:8080"]
   daemonset:
     config:
       output.file:
         enabled: false
       output:
         elasticsearch:
-          hosts: [ 'elk-elasticsearch-client:9200' ]
+          hosts: [ 'elasticstack-elasticsearch-client:9200' ]
       setup:
         kibana:
-          host: elk-kibana:80
+          host: elasticstack-kibana:80
 
 elasticsearch-curator:
   config:
     elasticsearch:
-      hosts: [ 'elk-elasticsearch-client' ]
+      hosts: [ 'elasticstack-elasticsearch-client' ]
 
 kibana:
   service:
@@ -93,7 +93,7 @@ kibana:
       secretName: kibana-secret
     secretName: kibana
   env:
-    ELASTICSEARCH_URL: http://elk-elasticsearch-client:9200
+    ELASTICSEARCH_URL: http://elasticstack-elasticsearch-client:9200
 #  plugins:
 #    # set to true to enable plugins installation
 #    enabled: true
