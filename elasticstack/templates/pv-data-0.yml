@@ -10,4 +10,7 @@ spec:
   nfs:
     path: /zpool-126262/WWWLOGSTASH/data-0
     server: 10.16.103.9
+  claimRef:
+    namespace: default
+    name: data-elasticstack-elasticsearch-data-0
   persistentVolumeReclaimPolicy: Delete
