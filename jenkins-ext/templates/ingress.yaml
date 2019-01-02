@@ -1,20 +1,40 @@
+{{- if .Values.ingress.enabled -}}
+{{- $fullName := include "jenkins-ext.fullname" . -}}
+{{- $ingressPaths := .Values.ingress.paths -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: jenkins
+  name: {{ $fullName }}
+  labels:
+    app.kubernetes.io/name: {{ include "jenkins-ext.name" . }}
+    helm.sh/chart: {{ include "jenkins-ext.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  {{- with .Values.ingress.annotations }}
   annotations:
-    kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/cluster-issuer: letsencrypt-issuer
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
+{{- if .Values.ingress.tls }}
   tls:
-  - hosts:
-    - jenkins.k8.wildwidewest.xyz
-    secretName: certificate
+  {{- range .Values.ingress.tls }}
+    - hosts:
+      {{- range .hosts }}
+        - {{ . | quote }}
+      {{- end }}
+      secretName: {{ .secretName }}-secret
+  {{- end }}
+{{- end }}
   rules:
-  - host: jenkins.k8.wildwidewest.xyz
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: jenkins
-          servicePort: 8080
+  {{- range .Values.ingress.hosts }}
+    - host: {{ . | quote }}
+      http:
+        paths:
+	{{- range $ingressPaths }}
+          - path: {{ . }}
+            backend:
+              serviceName: {{ $fullName }}
+              servicePort: http
+	{{- end }}
+  {{- end }}
+{{- end }}
