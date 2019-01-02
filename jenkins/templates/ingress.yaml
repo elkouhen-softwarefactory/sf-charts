@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - nexus.{{domaine}}
+    - jenkins.k8.wildwidewest.xyz
     secretName: certificate
   rules:
-  - host: jenkins.{{domaine}}
+  - host: jenkins.k8.wildwidewest.xyz
     http:
       paths:
       - path: /
