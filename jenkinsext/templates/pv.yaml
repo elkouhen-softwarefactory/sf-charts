@@ -5,11 +5,11 @@ metadata:
 spec:
   capacity:
     storage: 8Gi
+  accessModes:
+  - ReadWriteOnce
   claimRef:
     namespace: default
     name: {{ .Release.Name }}
-  accessModes:
-  - ReadWriteOnce
   nfs:
     path: /zpool-126262/WWWJENKINS
     server: {{ .Values.nfs.server }}
