@@ -52,5 +52,5 @@ affinity: {}
 jenkins: 
   Master:
     ContainerEnv:
-      - CASC_JENKINS_CONFIG
-        /var/jenkins_home/jenkins.yaml
+      - name: CASC_JENKINS_CONFIG
+        value: /var/jenkins_home/jenkins.yaml
