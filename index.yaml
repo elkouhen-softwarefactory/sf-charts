@@ -3,7 +3,7 @@ entries:
   books-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.694232897+01:00
+    created: 2019-01-02T11:53:36.122750902+01:00
     description: A Helm chart for Kubernetes
     digest: 9bf2a66339fb6a23c127fb40e786e1e140e69833f9f27ee9f32c89adc808814c
     name: books-api
@@ -12,7 +12,7 @@ entries:
     version: 0.0.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.693874503+01:00
+    created: 2019-01-02T11:53:36.122421398+01:00
     description: A Helm chart for Kubernetes
     digest: ba63614a20cba4f528617b937511bf2378d8adc2b1af99bdf9fc059b603a8499
     name: books-api
@@ -21,7 +21,7 @@ entries:
     version: 0.0.10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.694554618+01:00
+    created: 2019-01-02T11:53:36.123078117+01:00
     description: A Helm chart for Kubernetes
     digest: 1270ce2af84d9fc71dfab7bf1dd08c26c540b1cf969c79d623ee183465c83f20
     name: books-api
@@ -31,7 +31,7 @@ entries:
   books-gui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.695661078+01:00
+    created: 2019-01-02T11:53:36.124195461+01:00
     description: A Helm chart for Kubernetes
     digest: f652f356436d9c5207164b1740723fa8b635d6a1ba79d7bfa5f7996d6e3af687
     name: books-gui
@@ -40,7 +40,7 @@ entries:
     version: 0.0.15
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.695439238+01:00
+    created: 2019-01-02T11:53:36.12396774+01:00
     description: A Helm chart for Kubernetes
     digest: 8b85ddf6ed68d90ac264099fa85973fb7739a59b7044d7dcd06ea8471dfbcaa7
     name: books-gui
@@ -49,7 +49,7 @@ entries:
     version: 0.0.14
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.69523174+01:00
+    created: 2019-01-02T11:53:36.123757867+01:00
     description: A Helm chart for Kubernetes
     digest: cfbacdc8f1d9adeb564c32fabe333c683e0e856f51fe8229226aa9b9e2a62ae9
     name: books-gui
@@ -58,7 +58,7 @@ entries:
     version: 0.0.13
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.695018862+01:00
+    created: 2019-01-02T11:53:36.12352946+01:00
     description: A Helm chart for Kubernetes
     digest: a3e40837803ab9447acfcf56a71e1c73589cbf5b7fcda8bef39cf9369550eaa5
     name: books-gui
@@ -67,7 +67,7 @@ entries:
     version: 0.0.12
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.694780074+01:00
+    created: 2019-01-02T11:53:36.123314063+01:00
     description: A Helm chart for Kubernetes
     digest: 352a995c1d21a97ca8686eaada96d3dea59407a5145a21f8011c028ae69abcb5
     name: books-gui
@@ -77,7 +77,7 @@ entries:
   elasticstack:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.711995034+01:00
+    created: 2019-01-02T11:53:36.140439719+01:00
     description: A Helm chart for Kubernetes
     digest: 55b90f0ba4c16c5277a4856a057db38a46869dd4fa6cb4e7f7ced7b1e10764e1
     name: elasticstack
@@ -86,7 +86,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.708898638+01:00
+    created: 2019-01-02T11:53:36.137429338+01:00
     description: A Helm chart for Kubernetes
     digest: 5b97dea99f0915bf11136ba65601f7bbd0525d67abafb3c31ba937cbc0b29a24
     name: elasticstack
@@ -95,7 +95,7 @@ entries:
     version: 0.0.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.706017318+01:00
+    created: 2019-01-02T11:53:36.134583214+01:00
     description: A Helm chart for Kubernetes
     digest: 862d39a0c07d38a6058178a9e63b26527ea2d59a93639367510c9bbbfae7acaa
     name: elasticstack
@@ -104,7 +104,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.701895039+01:00
+    created: 2019-01-02T11:53:36.131428583+01:00
     description: A Helm chart for Kubernetes
     digest: 27504918fc0b665404c803c37820eae297623f2700c1538dcd4b1e2f8a5a1059
     name: elasticstack
@@ -113,7 +113,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.698780162+01:00
+    created: 2019-01-02T11:53:36.127131071+01:00
     description: A Helm chart for Kubernetes
     digest: 6a7f598e489869577b831c28bc52e5333a8061cf912526c092e0baa85873ca66
     name: elasticstack
@@ -123,7 +123,7 @@ entries:
   h2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.712386084+01:00
+    created: 2019-01-02T11:53:36.140831789+01:00
     description: A Helm chart for Kubernetes
     digest: 05b88892a927a05506d8c2cfa47237d58529010df4c15f921c3922f76928fddd
     name: h2
@@ -132,7 +132,7 @@ entries:
     version: 0.0.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.712189081+01:00
+    created: 2019-01-02T11:53:36.140630588+01:00
     description: A Helm chart for Kubernetes
     digest: 106b780ed14fc5d3e295802b24ce0917d02a8b5a8cb88683ee88f6d41bacce09
     name: h2
@@ -141,7 +141,7 @@ entries:
     version: 0.0.10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.712578309+01:00
+    created: 2019-01-02T11:53:36.141049582+01:00
     description: A Helm chart for Kubernetes
     digest: a30e99e37a4d22694784e6a840654597efa6dcdc807bba0729e7b6ab650114c6
     name: h2
@@ -151,7 +151,7 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.715427031+01:00
+    created: 2019-01-02T11:53:36.144864144+01:00
     description: A Helm chart for Kubernetes
     digest: a78ab54a00b7fbb837c71639df72413412e137960aa2308042012cb573a2258d
     name: jenkins
@@ -160,7 +160,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.714463866+01:00
+    created: 2019-01-02T11:53:36.143134957+01:00
     description: A Helm chart for Kubernetes
     digest: 5912f4976dd55985a237cedd766dd1d7b4d478beb97b9c6cddb2f8b07a9c779c
     name: jenkins
@@ -169,7 +169,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.713487762+01:00
+    created: 2019-01-02T11:53:36.142152623+01:00
     description: A Helm chart for Kubernetes
     digest: 9b02cc8004c1a97e4a217238e5f6f51da6a0ecb8a81e81c5d4d929fe7b0e5eb7
     name: jenkins
@@ -179,7 +179,7 @@ entries:
   jenkins-ext:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.719270957+01:00
+    created: 2019-01-02T11:53:36.147859812+01:00
     description: A Helm chart for Kubernetes
     digest: 2b89078bf1510709e57f5bd6bd98736a2e66a9355358dcd8ac6ccb07560a654a
     name: jenkins-ext
@@ -188,7 +188,7 @@ entries:
     version: 0.0.6
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.718358171+01:00
+    created: 2019-01-02T11:53:36.146976007+01:00
     description: A Helm chart for Kubernetes
     digest: ed463b85760234f1e072650f977fcdb07da9777070c84f6527d68fcfcfa8583d
     name: jenkins-ext
@@ -197,11 +197,11 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T11:52:51.717277595+01:00
+    created: 2019-01-02T11:53:36.146067186+01:00
     description: A Helm chart for Kubernetes
     digest: 68a96e1a4f50b505367917321bbd20e79cb9fd6f851d7345948a754d39136225
     name: jenkins-ext
     urls:
     - https://softeamouest-opus.github.io/charts/jenkins-ext-0.0.4.tgz
     version: 0.0.4
-generated: 2019-01-02T11:52:51.693426392+01:00
+generated: 2019-01-02T11:53:36.12197205+01:00
