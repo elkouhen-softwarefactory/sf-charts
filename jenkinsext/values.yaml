@@ -13,6 +13,10 @@ service:
   type: ClusterIP
   port: 80
 
+
+nfs:
+  server: 10.16.103.9
+
 ingress:
   enabled: true
   annotations:

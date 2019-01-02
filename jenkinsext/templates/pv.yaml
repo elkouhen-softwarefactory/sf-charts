@@ -13,5 +13,5 @@ spec:
   - ReadWriteOnce
   nfs:
     path: /zpool-126262/WWWJENKINS
-    server: "10.16.103.9"
+    server: {{ .Values.nfs.server }}
   persistentVolumeReclaimPolicy: Recycle
