@@ -6,8 +6,7 @@ spec:
   capacity:
     storage: 8Gi
   claimRef:
-    apiVersion: v1
-    kind: PersistentVolumeClaim
+    namespace: default
     name: {{ .Release.Name }}
   accessModes:
   - ReadWriteOnce
