@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "jenkinsext.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
+{{- $releaseName := .Release.Name -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -22,7 +23,7 @@ spec:
       {{- range .hosts }}
         - {{ . | quote }}
       {{- end }}
-      secretName: {{ .secretName }}-secret
+      secretName: {{ $releaseName }}-secret
   {{- end }}
 {{- end }}
   rules:
