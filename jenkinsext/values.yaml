@@ -50,6 +50,7 @@ tolerations: []
 affinity: {}
 
 jenkins: 
-  ContainerEnv: 
-    - CASC_JENKINS_CONFIG
-      /var/jenkins_home/jenkins.yaml
+  Master:
+    ContainerEnv:
+      - CASC_JENKINS_CONFIG
+        /var/jenkins_home/jenkins.yaml
