@@ -9,9 +9,6 @@ image:
   tag: stable
   pullPolicy: IfNotPresent
 
-nameOverride: ""
-fullnameOverride: ""
-
 service:
   type: ClusterIP
   port: 80
@@ -51,6 +48,6 @@ affinity: {}
 
 jenkins: 
   Master:
-    ContainerEnv:
-      - name: CASC_JENKINS_CONFIG
-        value: /var/jenkins_home/jenkins.yaml
+#    ContainerEnv:
+#      - name: CASC_JENKINS_CONFIG
+#        value: /var/jenkins_home/jenkins.yaml
