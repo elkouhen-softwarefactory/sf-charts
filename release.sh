@@ -11,6 +11,8 @@ while getopts "v:c:" arg; do
   esac
 done
 
+helm init --client-only
+
 cd $package
 
 helm dependency update --skip-refresh
