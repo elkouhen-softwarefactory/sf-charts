@@ -5,7 +5,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: {{ $fullName }}
+  name: {{ $fullName }}-registry
   labels:
     app.kubernetes.io/name: {{ include "nexus-impl.name" . }}
     helm.sh/chart: {{ include "nexus-impl.chart" . }}
@@ -23,7 +23,7 @@ spec:
       {{- range .hosts }}
         - {{ . | quote }}
       {{- end }}
-      secretName: {{ $releaseName }}-reg-secret
+      secretName: {{ $releaseName }}-registry-secret
   {{- end }}
 {{- end }}
   rules:
