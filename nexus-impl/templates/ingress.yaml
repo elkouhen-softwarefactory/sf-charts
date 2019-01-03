@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "nexus-impl.fullname" . -}}
-{{- $ingressPaths := .Values.ingress.paths -}}
+  {{- $ingressPath := .Values.ingress.path -}}
+    {{- $releaseName := .Release.Name -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -22,7 +23,7 @@ spec:
       {{- range .hosts }}
         - {{ . | quote }}
       {{- end }}
-      secretName: {{ .secretName }}
+      secretName: {{ $releaseName }}-secret
   {{- end }}
 {{- end }}
   rules:
@@ -30,11 +31,9 @@ spec:
     - host: {{ . | quote }}
       http:
         paths:
-	{{- range $ingressPaths }}
-          - path: {{ . }}
+          - path: {{ $ingressPath }}
             backend:
-              serviceName: {{ $fullName }}
+              serviceName: {{ $releaseName }}
               servicePort: http
-	{{- end }}
   {{- end }}
 {{- end }}
