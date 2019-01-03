@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  capacity:
+    storage: 8Gi
+  accessModes:
+  - ReadWriteOnce
+  claimRef:
+    namespace: default
+    name: {{ .Release.Name }}-postgresql
+  nfs:
+    path: /zpool-126262/WWWSONARQUBE
+    server: {{ .Values.nfs.server }}
+  persistentVolumeReclaimPolicy: Recycle
