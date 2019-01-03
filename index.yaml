@@ -3,7 +3,7 @@ entries:
   books-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.872272393+01:00
+    created: 2019-01-03T14:55:05.831599349+01:00
     description: A Helm chart for Kubernetes
     digest: 9bf2a66339fb6a23c127fb40e786e1e140e69833f9f27ee9f32c89adc808814c
     name: books-api
@@ -13,7 +13,7 @@ entries:
   books-gui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.872487502+01:00
+    created: 2019-01-03T14:55:05.831829603+01:00
     description: A Helm chart for Kubernetes
     digest: f652f356436d9c5207164b1740723fa8b635d6a1ba79d7bfa5f7996d6e3af687
     name: books-gui
@@ -23,7 +23,7 @@ entries:
   elasticstack:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.875441329+01:00
+    created: 2019-01-03T14:55:05.834785293+01:00
     description: A Helm chart for Kubernetes
     digest: 55b90f0ba4c16c5277a4856a057db38a46869dd4fa6cb4e7f7ced7b1e10764e1
     name: elasticstack
@@ -33,7 +33,16 @@ entries:
   grav:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.875699169+01:00
+    created: 2019-01-03T14:55:05.835299602+01:00
+    description: A Helm chart for Kubernetes
+    digest: b369a2676f8b68ceb56a3966270bc170ffc0d59b8affff61ba9dbafc860a08fc
+    name: grav
+    urls:
+    - https://softeamouest-opus.github.io/charts/grav-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-01-03T14:55:05.835062934+01:00
     description: A Helm chart for Kubernetes
     digest: c76edc52406266e2e7adb900000f06f834ea2178d6f9e4254b17395bead69556
     name: grav
@@ -43,7 +52,7 @@ entries:
   h2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.875882632+01:00
+    created: 2019-01-03T14:55:05.835489932+01:00
     description: A Helm chart for Kubernetes
     digest: 05b88892a927a05506d8c2cfa47237d58529010df4c15f921c3922f76928fddd
     name: h2
@@ -53,7 +62,7 @@ entries:
   jenkins-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.876848406+01:00
+    created: 2019-01-03T14:55:05.836496922+01:00
     description: A Helm chart for Kubernetes
     digest: bcb0626deb46030110e0fa78d4ebff6e6c20c7d5068d7d21dd1d26311c5c45a7
     name: jenkins-impl
@@ -63,7 +72,7 @@ entries:
   nexus-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.877663125+01:00
+    created: 2019-01-03T14:55:05.837377908+01:00
     description: A Helm chart for Kubernetes
     digest: 680e2fdc6f156f3ec8b8562d7e2f85fe16e46b7550cb41f5666d320928d8d56a
     name: nexus-impl
@@ -73,7 +82,7 @@ entries:
   sonarqube-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.88197143+01:00
+    created: 2019-01-03T14:55:05.84227472+01:00
     description: A Helm chart for Kubernetes
     digest: 3faeba6b98dd2a090b89926a44358e09ecbae5dd45529b5b426b08e8a1ac583c
     name: sonarqube-impl
@@ -82,7 +91,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.880227938+01:00
+    created: 2019-01-03T14:55:05.83983302+01:00
     description: A Helm chart for Kubernetes
     digest: fcc97d32e9a887062d2253ea40421dd2c57ffbd9c5c113ffeffc4ba0ccd333c1
     name: sonarqube-impl
@@ -91,11 +100,11 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T14:53:38.87786722+01:00
+    created: 2019-01-03T14:55:05.837701445+01:00
     description: A Helm chart for Kubernetes
     digest: 9d6bb09e983f8fd77ef34c2883b8b9f6ecc6595ed0d2413ae282d690d424c68d
     name: sonarqube-impl
     urls:
     - https://softeamouest-opus.github.io/charts/sonarqube-impl-0.0.1.tgz
     version: 0.0.1
-generated: 2019-01-03T14:53:38.871853515+01:00
+generated: 2019-01-03T14:55:05.831182926+01:00
