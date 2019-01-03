@@ -9,7 +9,7 @@ spec:
   - ReadWriteOnce
   claimRef:
     namespace: default
-    name: {{ .Release.Name }}
+    name: {{ .Release.Name }}-sonatype-nexus-data
   nfs:
     path: /zpool-126262/WWWNEXUS/nexus
     server: {{ .Values.nfs.server }}
