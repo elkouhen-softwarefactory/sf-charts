@@ -47,6 +47,13 @@ ingress_registry:
     - registry.k8.wildwidewest.xyz
     secretName: registry-secret
 
+sonatype-nexus:
+  enabled: true
+  annotations:
+    certmanager.k8s.io/issuer: letsencrypt-issuer
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
