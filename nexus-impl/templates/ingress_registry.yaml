@@ -1,0 +1,40 @@
+{{- if .Values.ingress_registry.enabled -}}
+{{- $fullName := include "sonarqube-impl.fullname" . -}}
+{{- $ingressPaths := .Values.ingress_registry.paths -}}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+    app.kubernetes.io/name: {{ include "sonarqube-impl.name" . }}
+    helm.sh/chart: {{ include "sonarqube-impl.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  {{- with .Values.ingress_registry.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+{{- if .Values.ingress_registry.tls }}
+  tls:
+  {{- range .Values.ingress_registry.tls }}
+    - hosts:
+      {{- range .hosts }}
+        - {{ . | quote }}
+      {{- end }}
+      secretName: {{ .secretName }}
+  {{- end }}
+{{- end }}
+  rules:
+  {{- range .Values.ingress_registry.hosts }}
+    - host: {{ . | quote }}
+      http:
+        paths:
+	{{- range $ingressPaths }}
+          - path: {{ . }}
+            backend:
+              serviceName: registry
+              servicePort: http
+	{{- end }}
+  {{- end }}
+{{- end }}

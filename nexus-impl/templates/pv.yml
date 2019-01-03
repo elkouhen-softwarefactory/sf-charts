@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-nexus
+spec:
+  capacity:
+    storage: 8Gi
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /zpool-126262/WWWNEXUS/nexus
+    server: "{{groups['nfs-master'][0] }}"
+  persistentVolumeReclaimPolicy: Recycle

@@ -3,276 +3,51 @@ entries:
   books-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T16:32:43.055881359+01:00
+    created: 2019-01-03T10:57:50.376998261+01:00
     description: A Helm chart for Kubernetes
     digest: 9bf2a66339fb6a23c127fb40e786e1e140e69833f9f27ee9f32c89adc808814c
     name: books-api
     urls:
     - https://softeamouest-opus.github.io/charts/books-api-0.0.11.tgz
     version: 0.0.11
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.055487754+01:00
-    description: A Helm chart for Kubernetes
-    digest: ba63614a20cba4f528617b937511bf2378d8adc2b1af99bdf9fc059b603a8499
-    name: books-api
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-api-0.0.10.tgz
-    version: 0.0.10
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.05624334+01:00
-    description: A Helm chart for Kubernetes
-    digest: 1270ce2af84d9fc71dfab7bf1dd08c26c540b1cf969c79d623ee183465c83f20
-    name: books-api
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-api-0.0.9.tgz
-    version: 0.0.9
   books-gui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T16:32:43.057359591+01:00
+    created: 2019-01-03T10:57:50.37740497+01:00
     description: A Helm chart for Kubernetes
     digest: f652f356436d9c5207164b1740723fa8b635d6a1ba79d7bfa5f7996d6e3af687
     name: books-gui
     urls:
     - https://softeamouest-opus.github.io/charts/books-gui-0.0.15.tgz
     version: 0.0.15
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.057141456+01:00
-    description: A Helm chart for Kubernetes
-    digest: 8b85ddf6ed68d90ac264099fa85973fb7739a59b7044d7dcd06ea8471dfbcaa7
-    name: books-gui
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-gui-0.0.14.tgz
-    version: 0.0.14
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.056905009+01:00
-    description: A Helm chart for Kubernetes
-    digest: cfbacdc8f1d9adeb564c32fabe333c683e0e856f51fe8229226aa9b9e2a62ae9
-    name: books-gui
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-gui-0.0.13.tgz
-    version: 0.0.13
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.056678408+01:00
-    description: A Helm chart for Kubernetes
-    digest: a3e40837803ab9447acfcf56a71e1c73589cbf5b7fcda8bef39cf9369550eaa5
-    name: books-gui
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-gui-0.0.12.tgz
-    version: 0.0.12
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.056458291+01:00
-    description: A Helm chart for Kubernetes
-    digest: 352a995c1d21a97ca8686eaada96d3dea59407a5145a21f8011c028ae69abcb5
-    name: books-gui
-    urls:
-    - https://softeamouest-opus.github.io/charts/books-gui-0.0.11.tgz
-    version: 0.0.11
   elasticstack:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T16:32:43.07568576+01:00
+    created: 2019-01-03T10:57:50.380954837+01:00
     description: A Helm chart for Kubernetes
     digest: 55b90f0ba4c16c5277a4856a057db38a46869dd4fa6cb4e7f7ced7b1e10764e1
     name: elasticstack
     urls:
     - https://softeamouest-opus.github.io/charts/elasticstack-0.0.5.tgz
     version: 0.0.5
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.072045152+01:00
-    description: A Helm chart for Kubernetes
-    digest: 5b97dea99f0915bf11136ba65601f7bbd0525d67abafb3c31ba937cbc0b29a24
-    name: elasticstack
-    urls:
-    - https://softeamouest-opus.github.io/charts/elasticstack-0.0.4.tgz
-    version: 0.0.4
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.068036679+01:00
-    description: A Helm chart for Kubernetes
-    digest: 862d39a0c07d38a6058178a9e63b26527ea2d59a93639367510c9bbbfae7acaa
-    name: elasticstack
-    urls:
-    - https://softeamouest-opus.github.io/charts/elasticstack-0.0.3.tgz
-    version: 0.0.3
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.064219696+01:00
-    description: A Helm chart for Kubernetes
-    digest: 27504918fc0b665404c803c37820eae297623f2700c1538dcd4b1e2f8a5a1059
-    name: elasticstack
-    urls:
-    - https://softeamouest-opus.github.io/charts/elasticstack-0.0.2.tgz
-    version: 0.0.2
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.060630368+01:00
-    description: A Helm chart for Kubernetes
-    digest: 6a7f598e489869577b831c28bc52e5333a8061cf912526c092e0baa85873ca66
-    name: elasticstack
-    urls:
-    - https://softeamouest-opus.github.io/charts/elasticstack-0.0.1.tgz
-    version: 0.0.1
   h2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T16:32:43.076096483+01:00
+    created: 2019-01-03T10:57:50.381384746+01:00
     description: A Helm chart for Kubernetes
     digest: 05b88892a927a05506d8c2cfa47237d58529010df4c15f921c3922f76928fddd
     name: h2
     urls:
     - https://softeamouest-opus.github.io/charts/h2-0.0.11.tgz
     version: 0.0.11
+  nexus-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-02T16:32:43.07590571+01:00
+    created: 2019-01-03T10:57:50.383110197+01:00
     description: A Helm chart for Kubernetes
-    digest: 106b780ed14fc5d3e295802b24ce0917d02a8b5a8cb88683ee88f6d41bacce09
-    name: h2
+    digest: 17ead6eccb2ce72a61d9d46406475527fa9df05518ed1f7494c1518d54b767ac
+    name: nexus-impl
     urls:
-    - https://softeamouest-opus.github.io/charts/h2-0.0.10.tgz
-    version: 0.0.10
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.07628118+01:00
-    description: A Helm chart for Kubernetes
-    digest: a30e99e37a4d22694784e6a840654597efa6dcdc807bba0729e7b6ab650114c6
-    name: h2
-    urls:
-    - https://softeamouest-opus.github.io/charts/h2-0.0.9.tgz
-    version: 0.0.9
-  jenkinsext:
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.092117445+01:00
-    description: A Helm chart for Kubernetes
-    digest: 21caa0241abca83f0e0ee0c1853387b8f03c6ad4b052b473ef9b81268f60f254
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.22.tgz
-    version: 0.0.22
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.091190667+01:00
-    description: A Helm chart for Kubernetes
-    digest: a7723c38df2017099bf86919dc1718f24fac5b2917d62bb7f704dcc6dab988c1
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.21.tgz
-    version: 0.0.21
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.090292481+01:00
-    description: A Helm chart for Kubernetes
-    digest: 5215fe7290bf42587162656a1ef928636b7eda3b7096653fa3f0b69a75b3b317
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.20.tgz
-    version: 0.0.20
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.08939243+01:00
-    description: A Helm chart for Kubernetes
-    digest: 302bf0d23f4ea198711123f828c717689a464b04c876d3ffa5dcd8eadf5eeaef
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.19.tgz
-    version: 0.0.19
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.088471942+01:00
-    description: A Helm chart for Kubernetes
-    digest: 5d3b0a65b4b3b514486f765e2d2b565c01ec43a09563d279cb0ca94382a173a9
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.18.tgz
-    version: 0.0.18
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.087544245+01:00
-    description: A Helm chart for Kubernetes
-    digest: d1047e762546f8a2ce514e7a6e33b3307fefce8236ad6aced5667680ab1ab1dc
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.17.tgz
-    version: 0.0.17
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.086628595+01:00
-    description: A Helm chart for Kubernetes
-    digest: 7a121a9aff75323c8130ae818c9df25117022f94fe34692fdcc1e2e12a5daa65
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.16.tgz
-    version: 0.0.16
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.085733572+01:00
-    description: A Helm chart for Kubernetes
-    digest: 68d40374a373d70797297534b781b1a6a438d76a0a1f05376da612af6e325b45
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.15.tgz
-    version: 0.0.15
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.084801815+01:00
-    description: A Helm chart for Kubernetes
-    digest: d3b3c678c8824343a2cc51dfb9ff1f9ef3e3add947f2e73a6b0371cbd0397c69
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.14.tgz
-    version: 0.0.14
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.083792984+01:00
-    description: A Helm chart for Kubernetes
-    digest: 3c7387ae0f9d4ddd011d9ff2c23093e039ac70e41dec1e66caae06c2e31eef19
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.13.tgz
-    version: 0.0.13
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.079499551+01:00
-    description: A Helm chart for Kubernetes
-    digest: 44ca2327fd46f13a91a4265469437dd627207069935506dd25c338d71923f0f1
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.12.tgz
-    version: 0.0.12
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.078430105+01:00
-    description: A Helm chart for Kubernetes
-    digest: 2e0b784e4cab56ff808838684157d8411461f6e4fb797d9a6aedf5b7cab96606
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.11.tgz
-    version: 0.0.11
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.077333019+01:00
-    description: A Helm chart for Kubernetes
-    digest: 4b8af3e8d051a689fe7ffb8b8852d2c2a4c92b093e7d72cdad2365f377494873
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.10.tgz
-    version: 0.0.10
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2019-01-02T16:32:43.093028612+01:00
-    description: A Helm chart for Kubernetes
-    digest: 4a8b2f314c39510e8868fcbd585ce4340667fbfa30268adda76e36229007c6c7
-    name: jenkinsext
-    urls:
-    - https://softeamouest-opus.github.io/charts/jenkinsext-0.0.9.tgz
-    version: 0.0.9
-generated: 2019-01-02T16:32:43.055046343+01:00
+    - https://softeamouest-opus.github.io/charts/nexus-impl-0.0.1.tgz
+    version: 0.0.1
+generated: 2019-01-03T10:57:50.376319929+01:00
