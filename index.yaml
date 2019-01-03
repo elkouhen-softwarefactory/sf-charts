@@ -3,7 +3,7 @@ entries:
   books-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.910166763+01:00
+    created: 2019-01-03T11:09:09.002163144+01:00
     description: A Helm chart for Kubernetes
     digest: 9bf2a66339fb6a23c127fb40e786e1e140e69833f9f27ee9f32c89adc808814c
     name: books-api
@@ -13,7 +13,7 @@ entries:
   books-gui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.910516734+01:00
+    created: 2019-01-03T11:09:09.002399107+01:00
     description: A Helm chart for Kubernetes
     digest: f652f356436d9c5207164b1740723fa8b635d6a1ba79d7bfa5f7996d6e3af687
     name: books-gui
@@ -23,7 +23,7 @@ entries:
   elasticstack:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.914230743+01:00
+    created: 2019-01-03T11:09:09.005933994+01:00
     description: A Helm chart for Kubernetes
     digest: 55b90f0ba4c16c5277a4856a057db38a46869dd4fa6cb4e7f7ced7b1e10764e1
     name: elasticstack
@@ -33,7 +33,7 @@ entries:
   h2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.914434381+01:00
+    created: 2019-01-03T11:09:09.006192254+01:00
     description: A Helm chart for Kubernetes
     digest: 05b88892a927a05506d8c2cfa47237d58529010df4c15f921c3922f76928fddd
     name: h2
@@ -43,7 +43,16 @@ entries:
   nexus-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.921077581+01:00
+    created: 2019-01-03T11:09:09.016064965+01:00
+    description: A Helm chart for Kubernetes
+    digest: cd76cc0b5693eb52d5faecdb01e1d3fdad7fdd461d29f4b6c505bfd20d34b3d9
+    name: nexus-impl
+    urls:
+    - https://softeamouest-opus.github.io/charts/nexus-impl-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-01-03T11:09:09.012313851+01:00
     description: A Helm chart for Kubernetes
     digest: ac532fb44822fd1092ed31e036e9f300fd89532ad1887e2ef971bd2804edd93b
     name: nexus-impl
@@ -52,7 +61,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.919254423+01:00
+    created: 2019-01-03T11:09:09.01088924+01:00
     description: A Helm chart for Kubernetes
     digest: ad0467ae8a107b3d24d4872d762d7a2085b5dffa60c04a43d89d07c157f9ded2
     name: nexus-impl
@@ -61,7 +70,7 @@ entries:
     version: 0.0.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.917635007+01:00
+    created: 2019-01-03T11:09:09.009630901+01:00
     description: A Helm chart for Kubernetes
     digest: 067c74e6aa32d53fc5b9d5a4826c3bab21ea299fb266f1bc8817cf2fab22bcc8
     name: nexus-impl
@@ -70,7 +79,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.916638165+01:00
+    created: 2019-01-03T11:09:09.008413261+01:00
     description: A Helm chart for Kubernetes
     digest: bff350ae35c83d87a5c14cb64b7fdebedf09204ffa3fa54ba3b7fe840f19cab1
     name: nexus-impl
@@ -79,11 +88,11 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-03T11:07:53.915582264+01:00
+    created: 2019-01-03T11:09:09.007309507+01:00
     description: A Helm chart for Kubernetes
     digest: 17ead6eccb2ce72a61d9d46406475527fa9df05518ed1f7494c1518d54b767ac
     name: nexus-impl
     urls:
     - https://softeamouest-opus.github.io/charts/nexus-impl-0.0.1.tgz
     version: 0.0.1
-generated: 2019-01-03T11:07:53.909517803+01:00
+generated: 2019-01-03T11:09:09.001685862+01:00
