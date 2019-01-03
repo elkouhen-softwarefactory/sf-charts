@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "sonarqube-impl.fullname" . -}}
+{{- $fullName := include "nexus-impl.fullname" . -}}
 {{- $ingressPaths := .Values.ingress.paths -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app.kubernetes.io/name: {{ include "sonarqube-impl.name" . }}
-    helm.sh/chart: {{ include "sonarqube-impl.chart" . }}
+    app.kubernetes.io/name: {{ include "nexus-impl.name" . }}
+    helm.sh/chart: {{ include "nexus-impl.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
   {{- with .Values.ingress.annotations }}
