@@ -19,4 +19,4 @@ git config --global user.name "Startech Ouest"
 
 git commit -am "release chart $package:$version"
 
-git push --set-upstream origin master
+git push

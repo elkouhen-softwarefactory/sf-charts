@@ -22,7 +22,7 @@ podTemplate(label: 'chart-run-pod', containers: [
         ])
 
         stage('CHECKOUT') {
-            checkout scm;
+            git credentialsId: '8a1a2c95-7867-4716-aa4f-5a51cfef10ab', url: 'git@github.com:SofteamOuest-Opus/charts.git'
         }
 
         container('helm') {
