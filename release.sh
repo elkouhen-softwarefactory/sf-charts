@@ -25,6 +25,10 @@ helm repo index . --url https://softeamouest-opus.github.io/charts/
 
 git add .
 
+git config --global user.email "startech.ouest@gmail.com"
+
+git config --global user.name "Startech Ouest"
+
 git commit -am "release chart $package:$version"
 
 git push
