@@ -25,6 +25,8 @@ podTemplate(label: 'chart-run-pod', containers: [
                 checkout scm;
             }
 
+        container('helm') {
+
             stage('DEPLOY') {
 
                 String command = "./release.sh -c ${params.chart} -v ${params.version}"
@@ -32,4 +34,5 @@ podTemplate(label: 'chart-run-pod', containers: [
                 sh "${command}"
             }
         }
+    }
 }
