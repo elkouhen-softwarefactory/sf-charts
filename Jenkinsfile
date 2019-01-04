@@ -38,17 +38,12 @@ podTemplate(label: 'chart-run-pod', containers: [
         }
 
         stage('RELEASE') {
+            
+            withCredentials([usernamePassword(credentialsId: 'elkouhen-github', usernameVariable: 'username', passwordVariable: 'password')]) {
 
-            configFileProvider([configFile(fileId: 'jenkins-ssh-private-key', targetLocation: '/home/jenkins/.ssh/id_rsa'),
-                                configFile(fileId: 'jenkins-ssh-public-key', targetLocation: '/home/jenkins/.ssh/id_rsa.pub')]) {
+                String command = "./commit.sh -c ${params.chart} -v ${params.version} -u ${username} -p ${password}"
 
-                withCredentials([usernamePassword(credentialsId: 'elkouhen-github', usernameVariable: 'username', passwordVariable: 'password')]) {
-
-                    String command = "./commit.sh -c ${params.chart} -v ${params.version} -u ${username} -p ${password}"
-
-                    sh "${command}"
-
-                }
+                sh "${command}"
 
             }
         }
