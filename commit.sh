@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-while getopts "v:c:" arg; do
+while getopts "v:c:u:p:" arg; do
   case $arg in
+    u)
+      username=$OPTARG
+      ;;
+    p)
+      password=$OPTARG
+      ;;
     v)
       version=$OPTARG
       ;;
@@ -11,12 +17,15 @@ while getopts "v:c:" arg; do
   esac
 done
 
+echo "machine github.com" > ~/.netrc
+echo "        login $username" >> ~/.netrc
+echo "        password $password" >> ~/.netrc
 
 echo "StrictHostKeyChecking no" > ~/.ssh/config
 
-chmod 600 ~/.ssh/id_rsa
-chmod 644 ~/.ssh/id_rsa.pub
-chmod 644 ~/.ssh/config
+#chmod 600 ~/.ssh/id_rsa
+#chmod 644 ~/.ssh/id_rsa.pub
+#chmod 644 ~/.ssh/config
 
 git add .
 

@@ -22,7 +22,7 @@ podTemplate(label: 'chart-run-pod', containers: [
         ])
 
         stage('CHECKOUT') {
-            git credentialsId: '8a1a2c95-7867-4716-aa4f-5a51cfef10ab', url: 'git@github.com:SofteamOuest-Opus/charts.git'
+            checkout scm;
         }
 
         container('helm') {
@@ -39,9 +39,15 @@ podTemplate(label: 'chart-run-pod', containers: [
 
             configFileProvider([configFile(fileId: 'jenkins-ssh-private-key', targetLocation: '/home/jenkins/.ssh/id_rsa'),
                                 configFile(fileId: 'jenkins-ssh-public-key', targetLocation: '/home/jenkins/.ssh/id_rsa.pub')]) {
-                 String command = "./commit.sh -c ${params.chart} -v ${params.version}"
 
-                 sh "${command}"
+                withCredentials([usernamePassword(credentialsId: 'elkouhen-github', usernameVariable: 'username', passwordVariable: 'password')]) {
+
+                    String command = "./commit.sh -c ${params.chart} -v ${params.version} -u ${username} -p ${password}"
+
+                    sh "${command}"
+
+                }
+
             }
         }
     }
