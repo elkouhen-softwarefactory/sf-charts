@@ -56,13 +56,7 @@ podTemplate(label: 'chart-run-pod', containers: [
 
 Collection<String> charts() {
 
-    def dirsl = []
-    new File("${workspace}").eachDir() { dirs ->
-        println dirs.getName()
-        if (!dirs.getName().startsWith('.')) {
-            dirsl.add(dirs.getName())
-        }
-    }
+    def  FILES_LIST = sh (script: "ls", returnStdout: true).trim()
 
-    dirsl
+    FILES_LIST
 }
