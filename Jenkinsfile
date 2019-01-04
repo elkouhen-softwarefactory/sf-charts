@@ -37,9 +37,12 @@ podTemplate(label: 'chart-run-pod', containers: [
 
         stage('RELEASE') {
 
-            String command = "./commit.sh -c ${params.chart} -v ${params.version}"
+            configFileProvider([configFile(fileId: 'jenkins-ssh-private-key', targetLocation: '~/.ssh/id_rsa'),
+                                configFile(fileId: 'jenkins-ssh-public-key', targetLocation: '~/.ssh/id_rsa.pub')]) {
+                 String command = "./commit.sh -c ${params.chart} -v ${params.version}"
 
-            sh "${command}"
+                 sh "${command}"
+            }
         }
     }
 }
