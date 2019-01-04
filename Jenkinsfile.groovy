@@ -17,6 +17,7 @@ podTemplate(label: 'chart-run-pod', containers: [
         properties([
                 parameters([
                         string(defaultValue: '', description: 'Chart à releaser', name: 'chart'),
+                        choice(choices: "${charts().join('\n')}"),
                         string(defaultValue: '', description: 'Version du chart à deployer', name: 'version')
                 ])
         ])
@@ -51,4 +52,17 @@ podTemplate(label: 'chart-run-pod', containers: [
             }
         }
     }
+}
+
+Collection<String> charts() {
+
+    def dirsl = []
+    new File("${workspace}").eachDir() { dirs ->
+        println dirs.getName()
+        if (!dirs.getName().startsWith('.')) {
+            dirsl.add(dirs.getName())
+        }
+    }
+
+    dirsl
 }
