@@ -14,10 +14,11 @@ podTemplate(label: 'chart-run-pod', containers: [
 
     node('chart-run-pod') {
 
+        def charts = ['books-api', 'books-gui', 'h2', 'grav', 'jenkins-impl', 'nexus-impl', 'sonarqube-impl', 'elasticstack']
+
         properties([
                 parameters([
-                        string(defaultValue: '', description: 'Chart à releaser', name: 'chart'),
-                        choice(choices: "${charts()}"),
+                        choice(choices: charts, description: 'Chart à deployer', name: 'chart'),
                         string(defaultValue: '', description: 'Version du chart à deployer', name: 'version')
                 ])
         ])
@@ -56,7 +57,7 @@ podTemplate(label: 'chart-run-pod', containers: [
 
 Collection<String> charts() {
 
-    def  FILES_LIST = sh (script: "ls", returnStdout: true).trim()
+    def FILES_LIST = sh(script: "ls", returnStdout: true).trim()
 
     FILES_LIST
 }
