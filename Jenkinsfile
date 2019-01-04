@@ -17,7 +17,7 @@ podTemplate(label: 'chart-run-pod', containers: [
         properties([
                 parameters([
                         string(defaultValue: '', description: 'Chart à releaser', name: 'chart'),
-                        choice(choices: "${charts().join('\n')}"),
+                        choice(choices: "${charts()}"),
                         string(defaultValue: '', description: 'Version du chart à deployer', name: 'version')
                 ])
         ])
