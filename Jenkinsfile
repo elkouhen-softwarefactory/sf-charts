@@ -27,7 +27,7 @@ podTemplate(label: 'chart-run-pod', containers: [
 
         container('helm') {
 
-            stage('PRE-RELEASE') {
+            stage('HELM-RELEASE') {
 
                 String command = "./release.sh -c ${params.chart} -v ${params.version}"
 
@@ -37,8 +37,8 @@ podTemplate(label: 'chart-run-pod', containers: [
 
         stage('RELEASE') {
 
-            configFileProvider([configFile(fileId: 'jenkins-ssh-private-key', targetLocation: '~/.ssh/id_rsa'),
-                                configFile(fileId: 'jenkins-ssh-public-key', targetLocation: '~/.ssh/id_rsa.pub')]) {
+            configFileProvider([configFile(fileId: 'jenkins-ssh-private-key', targetLocation: '/home/jenkins/.ssh/id_rsa'),
+                                configFile(fileId: 'jenkins-ssh-public-key', targetLocation: '/home/jenkins/.ssh/id_rsa.pub')]) {
                  String command = "./commit.sh -c ${params.chart} -v ${params.version}"
 
                  sh "${command}"
