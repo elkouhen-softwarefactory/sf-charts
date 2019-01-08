@@ -11,6 +11,6 @@ spec:
     path: /zpool-126262/WWWLOGSTASH/data-1
     server: 10.16.103.9
   claimRef:
-    namespace: default
+    namespace: {{ .Values.environment }}
     name: data-elasticstack-elasticsearch-data-1
   persistentVolumeReclaimPolicy: Delete

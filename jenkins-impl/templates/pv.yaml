@@ -8,7 +8,7 @@ spec:
   accessModes:
   - ReadWriteOnce
   claimRef:
-    namespace: default
+    namespace: {{ .Values.environment }}
     name: {{ .Release.Name }}
   nfs:
     path: /zpool-126262/WWWJENKINS
