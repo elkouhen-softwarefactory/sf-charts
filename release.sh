@@ -19,6 +19,6 @@ helm dependency update --skip-refresh
 
 cd -
 
-helm package --version $version $package
+helm package -d bin --version $version $package
 
 helm repo index . --url https://softeamouest-opus.github.io/charts/
