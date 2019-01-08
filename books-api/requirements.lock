@@ -2,5 +2,5 @@ dependencies:
 - name: h2
   repository: file://../h2
   version: 0.1.0
-digest: sha256:db64abf807b008eb984d8f77ba32c7daca891037f5fad4a5504c0a6c3b0509ed
-generated: 2018-11-28T21:46:37.690784992+01:00
+digest: sha256:d8d3a37fe1f58a7679642f0babe1202954b0e0d9760537c0a578b789c669bfc2
+generated: 2019-01-08T11:05:08.299359542+01:00
