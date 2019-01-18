@@ -1,6 +1,0 @@
-dependencies:
-- name: h2
-  version: 0.1.0
-  repository: "file://../h2"
-  condition: h2.enabled
-
