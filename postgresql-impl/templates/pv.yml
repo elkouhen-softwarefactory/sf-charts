@@ -9,7 +9,7 @@ spec:
   - ReadWriteOnce
   claimRef:
     namespace: {{ .Values.environment }}
-    name: data-postgresql-postgresql-0
+    name: data-{{ .Release.Name }}-postgresql-0
   nfs:
     path: /zpool-126262/WWWPG/postgres
     server: {{ .Values.nfs.server }}
