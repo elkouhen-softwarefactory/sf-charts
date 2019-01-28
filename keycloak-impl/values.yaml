@@ -52,6 +52,3 @@ affinity: {}
 
 keycloak: 
   Master:
-#    ContainerEnv:
-#      - name: CASC_JENKINS_CONFIG
-#        value: /var/keycloak_home/keycloak.yaml
