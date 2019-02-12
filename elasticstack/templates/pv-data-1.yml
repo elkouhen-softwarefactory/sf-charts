@@ -8,7 +8,7 @@ spec:
   accessModes:
   - ReadWriteOnce
   nfs:
-    path: /zpool-126262/WWWLOGSTASH/data-1
+    path: /zpool-126262/WWWELASTICSEARCH/data-1
     server: 10.16.103.9
   claimRef:
     namespace: {{ .Values.environment }}
