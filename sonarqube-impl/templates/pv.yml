@@ -8,7 +8,7 @@ spec:
   accessModes:
   - ReadWriteOnce
   claimRef:
-    namespace: {{ .Values.environment }}
+    namespace: {{ .Release.Namespace }}
     name: {{ .Release.Name }}-postgresql
   nfs:
     path: /zpool-126262/WWWSONARQUBE

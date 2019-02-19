@@ -11,6 +11,6 @@ spec:
     path: /zpool-126262/WWWELASTICSEARCH/master-0
     server: 10.16.103.9
   claimRef:
-    namespace: {{ .Values.environment }}
+    namespace: {{ .Release.Namespace }}
     name: data-elasticstack-elasticsearch-master-0
   persistentVolumeReclaimPolicy: Delete
