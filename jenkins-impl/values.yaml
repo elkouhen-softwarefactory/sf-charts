@@ -14,9 +14,6 @@ service:
   port: 80
 
 
-nfs:
-  server: 10.16.103.9
-
 ingress:
   enabled: true
   annotations:
@@ -25,10 +22,6 @@ ingress:
   hosts:
   - jenkins.melkouhen.net
   secretName: jenkins-secret
-  tls:
-  - hosts:
-    - jenkins.melkouhen.net
-    secretName: jenkins-secret
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
