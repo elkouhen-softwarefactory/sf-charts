@@ -3,7 +3,16 @@ entries:
   jenkins-impl:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.778251+02:00"
+    created: "2019-08-07T22:14:27.905778+02:00"
+    description: A Helm chart for Kubernetes
+    digest: d749201e2781ea6f9ab254c35373e88bc77d908c7e9d181d8ede702040a9c6e3
+    name: jenkins-impl
+    urls:
+    - https://elkouhen.github.io/sf-charts/bin/jenkins-impl-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-08-07T22:14:27.904299+02:00"
     description: A Helm chart for Kubernetes
     digest: 700654b2adec5e1ac355a9cce99dd856faa78b9d5803a95498aea4570492dd70
     name: jenkins-impl
@@ -12,7 +21,7 @@ entries:
     version: 0.0.6
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.776093+02:00"
+    created: "2019-08-07T22:14:27.90213+02:00"
     description: A Helm chart for Kubernetes
     digest: 86b16d135812e8710c930e08143e868c75ad820b0356b5cb635c54d45788fc3f
     name: jenkins-impl
@@ -21,7 +30,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.774378+02:00"
+    created: "2019-08-07T22:14:27.900435+02:00"
     description: A Helm chart for Kubernetes
     digest: 56b9b389df93b5a7d8cb9184d392f0861598d5815f50f6a465361f6af1423dd9
     name: jenkins-impl
@@ -30,7 +39,7 @@ entries:
     version: 0.0.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.772701+02:00"
+    created: "2019-08-07T22:14:27.898784+02:00"
     description: A Helm chart for Kubernetes
     digest: d65a4c13920d43f992791b8be9970465b2c769504c1b938794de5492e16bb353
     name: jenkins-impl
@@ -39,7 +48,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.771355+02:00"
+    created: "2019-08-07T22:14:27.897566+02:00"
     description: A Helm chart for Kubernetes
     digest: bcc5c7d2788413e6ebe8dd19393ac4118f2e8b81809ca59ac84ef46e20f436be
     name: jenkins-impl
@@ -48,11 +57,11 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-08-07T22:02:19.769611+02:00"
+    created: "2019-08-07T22:14:27.896297+02:00"
     description: A Helm chart for Kubernetes
     digest: 016cfec22832484899ebe33d1e70ec785c76484df5e071d8cc56440e2971255f
     name: jenkins-impl
     urls:
     - https://elkouhen.github.io/sf-charts/bin/jenkins-impl-0.0.1.tgz
     version: 0.0.1
-generated: "2019-08-07T22:02:19.767986+02:00"
+generated: "2019-08-07T22:14:27.894207+02:00"
