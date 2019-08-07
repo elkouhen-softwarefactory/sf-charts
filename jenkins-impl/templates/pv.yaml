@@ -10,7 +10,7 @@ spec:
   claimRef:
     namespace: {{ .Release.Namespace }}
     name: {{ .Release.Name }}
-  nfs:
-    path: /zpool-126262/WWWJENKINS
-    server: {{ .Values.nfs.server }}
+  awsElasticBlockStore:
+    volumeID: vol-0e242afa88660c3bb
+    fsType: ext4
   persistentVolumeReclaimPolicy: Recycle
