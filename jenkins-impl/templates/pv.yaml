@@ -11,6 +11,6 @@ spec:
     namespace: {{ .Release.Namespace }}
     name: {{ .Release.Name }}
   awsElasticBlockStore:
-    volumeID: vol-0e242afa88660c3bb
+    volumeID: vol-0374398d9a89aab1d
     fsType: ext4
   persistentVolumeReclaimPolicy: Recycle
