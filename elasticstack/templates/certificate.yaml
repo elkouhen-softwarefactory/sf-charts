@@ -7,12 +7,12 @@ spec:
   issuerRef:
     name: letsencrypt-issuer
     kind: Issuer
-  commonName: kibana.k8.wildwidewest.xyz
+  commonName: kibana.melkouhen.net
   dnsNames:
-  - kibana.k8.wildwidewest.xyz
+  - kibana.melkouhen.net
   acme:
     config:
     - http01:
         ingressClass: nginx
       domains:
-        - kibana.k8.wildwidewest.xyz
+        - kibana.melkouhen.net

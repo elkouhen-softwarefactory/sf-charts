@@ -10,9 +10,11 @@ spec:
   commonName: {{ .Release.Name }}.melkouhen.net
   dnsNames:
     - {{ .Release.Name }}.melkouhen.net
+    - registry-{{ .Release.Name }}.melkouhen.net
   acme:
     config:
       - dns01:
           provider: dns
         domains:
           - {{ .Release.Name }}.melkouhen.net
+          - registry-{{ .Release.Name }}.melkouhen.net
