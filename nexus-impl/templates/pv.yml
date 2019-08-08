@@ -10,7 +10,7 @@ spec:
   claimRef:
     namespace: {{ .Release.Namespace }}
     name: {{ .Release.Name }}-sonatype-nexus-data
-  nfs:
-    path: /zpool-126262/WWWNEXUS/nexus
-    server: {{ .Values.nfs.server }}
+  awsElasticBlockStore:
+    volumeID: vol-0819d7e7ec8ca001f
+    fsType: ext4
   persistentVolumeReclaimPolicy: Recycle
