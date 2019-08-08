@@ -21,4 +21,4 @@ cd -
 
 helm package -d bin --version $version $package
 
-helm repo index . --url https://elkouhen.github.io/sf-charts/
+helm repo index . --url https://elkouhen-softwarefactory.github.io/sf-charts/
